@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Random Array in Paragraph</h2>
+    <input type="button" id="btnSearch" value="Search" onclick="GetValue();" />
+    <p id="message" ></p>
+
+<script>
+function GetValue()
+{
+    myarray= ["January", "February", "March", "April", "May", "June", "July", "August", "September","October","November","December"];
+    random = myarray[Math.floor(Math.random() * myarray.length)];
+    //alert(random);
+
+    // Below must be in this order with the variable after the operator to work
+    document.getElementById("message").innerHTML=random;
+}
+
+</script>
+
+</body>
+</html>
